@@ -1,0 +1,47 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Next.js build artifacts
+.next
+out
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Environment files
+.env
+.env.*
+*.env
+*.local
+
+# Test / coverage
+coverage
+test
+tests
+__tests__
+*.spec.*
+*.test.*
+
+# Editor / OS
+.vscode
+.idea
+*.swp
+*.swo
+.DS_Store
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# Misc
+README.md

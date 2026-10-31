@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap");
+
+@import "tailwindcss";
+@import "antd/dist/antd.css";
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap"); */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans Thai", sans-serif;
+  background-color: #f9fafb;
+}
+
+.ant-menu-inline .ant-menu-item::after {
+  border-right: none !important;
+}
+
+/* ✅ สีเริ่มต้นของเมนู */
+.ant-menu-item,
+.ant-menu-submenu-title {
+  color: #747474 !important; /* ข้อความเทา */
+}
+
+.ant-menu-item .anticon,
+.ant-menu-submenu-title .anticon {
+  color: #a4a4a4 !important; /* icon เทา */
+}
+
+/* ✅ ตอน hover */
+.ant-menu-item:hover,
+.ant-menu-submenu-title:hover {
+  color: #0054a5 !important;
+}
+
+.ant-menu-item:hover .anticon,
+.ant-menu-submenu-title:hover .anticon {
+  color: #87d2f7 !important;
+}
+
+/* ✅ ตอน active */
+.ant-menu-item-selected {
+  color: #0054a5 !important;
+  background-color: #e6f7ff !important;
+  border-radius: 6px;
+}
+
+.ant-menu-item-selected .anticon {
+  color: #87d2f7 !important; /* ไอคอนฟ้า */
+}
+
+.ant-menu-item .anticon {
+  transition: color 0.3s ease;
+}
+
+/* 🔹 ปรับสีหัวตาราง */
+.custom-table .ant-table-thead > tr > th {
+  background-color: #f0f9ff !important;
+  color: #0054a5 !important;
+  font-weight: 500;
+  border-bottom: 1px solid #e0e0e0 !important;
+  font-size: 14px;
+}
+
+/* 🔹 ปรับสีข้อความใน body */
+.custom-table .ant-table-tbody > tr > td {
+  background-color: #fafdff !important;
+  color: #747474 !important;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* 🔹 hover effect ให้อ่อนลง */
+.custom-table .ant-table-tbody > tr:hover > td {
+  background-color: rgba(0, 84, 165, 0.04) !important;
+}
+
+/* 🔹 ปรับ padding ให้อ่านง่าย */
+.custom-table .ant-table-cell {
+  padding: 12px 16px !important;
+}
+
+/* ✅ จัด header ของคอลัมน์ "สถานะ" ให้ชิดซ้าย */
+.ant-table-thead > tr > th.status-column {
+  text-align: left !important;
+}
+
+/* ✅ แต่ให้ cell ด้านในยังอยู่กลาง */
+.ant-table-tbody > tr > td.status-column {
+  text-align: center !important;
+}
+
+.ant-message,
+.ant-notification {
+  z-index: 99999 !important;
+  position: fixed !important;
+}
+
+/* .circle-checkbox .ant-checkbox-inner {
+  border-radius: 50%;
+}
+
+.circle-checkbox.ant-checkbox-checked .ant-checkbox-inner::after {
+  display: none;  
+}
+
+.circle-checkbox.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #1677ff;
+  border-color: #1677ff;
+} */
